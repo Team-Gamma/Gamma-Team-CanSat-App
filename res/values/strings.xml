@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Team Gamma</string>
+    <string-array name="slidemenu_array">
+        <item>Home</item>
+        <item>Temperature</item>
+        <item>Pressure</item>
+        <item>Humidity</item>
+        <item>Gyroskope</item>
+        <item >Last position</item><item>Import</item>
+        <item>Options</item>
+        
+    </string-array>
+        <string-array name="values_array">
+        <item>time.txt</item>
+        <item>temp.txt</item>
+        <item>co2.text</item>
+    </string-array>
+    
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="value_time">time.txt</string>
+    <string name="value_temp">time.txt</string>
+    <string name="value_co2">time.txt</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+    <string name="WELCOMEMESSAGE">Welcome to the Official Team Gamma CanSat 2014 Android Application. We hope you enjoy it!</string>
+    <string name="graphical_line_chart_options">Graphical line chart options</string>
+</resources>

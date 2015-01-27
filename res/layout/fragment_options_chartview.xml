@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/graphical_line_chart_options"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="SAVE" />
+
+        <TextView
+            android:id="@+id/lines"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="138dp"
+            android:text="Lines"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <SeekBar
+            android:id="@+id/lineSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/lines"
+            android:layout_toRightOf="@+id/point"
+            android:max="8" />
+
+        <TextView
+            android:id="@+id/colorSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lineSeekBar"
+            android:layout_alignParentLeft="true"
+            android:text="Color selection:"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lineSeekBar"
+            android:text="Points"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <SeekBar
+            android:id="@+id/pointSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lineSeekBar"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/point"
+            android:max="8" />
+
+        <SeekBar
+            android:id="@+id/areaSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pointSeekBar"
+            android:layout_below="@+id/point"
+            android:max="8" />
+
+        <TextView
+            android:id="@+id/area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/point"
+            android:text="Area"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/selectedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/colorSelection"
+            android:layout_marginBottom="19dp"
+            android:layout_toRightOf="@+id/displayingpoints"
+            android:ems="10"
+            android:maxLength="2"
+            android:inputType="number"
+            android:textColor="@android:color/holo_orange_light" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/displayingpoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/selectedNumber"
+            android:layout_alignParentLeft="true"
+            android:text="displaying points/chart: "
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/selectedPointColor"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/pointSeekBar"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/selectedAreaColor"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pointSeekBar" />
+
+        <TextView
+            android:id="@+id/selectedLinesColor"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/lineSeekBar" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Select your exportpath"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/exportPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:textColor="@android:color/holo_orange_light" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/exportPath"
+            android:layout_marginTop="16dp"
+            android:background="#FF0099CC" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="18dp"
+            android:text="Select your storage path"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/storagePath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:textColor="@android:color/holo_orange_light" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:text="change it only, of you know one's stuff" 
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="SAVE" />
+        
+         <Button
+            android:id="@+id/button_browser_export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/exportPath"
+            android:layout_alignBottom="@+id/exportPath"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="BROWS" />
+
+         <Button
+             android:id="@+id/button_browser_storage"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_below="@+id/textView4"
+             android:background="@android:color/holo_blue_light"
+             android:text="BROWS" />
+
+    </RelativeLayout>
+
+</LinearLayout>

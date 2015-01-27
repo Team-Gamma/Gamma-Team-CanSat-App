@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="No options.txt was found! Plaese choose your own one or create a new one!"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/optionsPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:textColor="@android:color/holo_orange_light" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/button_generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="Generate new options.txt" />
+
+        <Button
+            android:id="@+id/button_browser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/optionsPath"
+            android:layout_alignBottom="@+id/optionsPath"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="BROWS" />
+
+    </RelativeLayout>
+
+</LinearLayout>

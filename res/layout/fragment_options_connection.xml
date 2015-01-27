@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Connect via Java Socket"
+            android:textColor="@android:color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="20dp"
+            android:text="IP Adress: "
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editJavaSocketIPAdress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView2"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/holo_orange_light" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editJavaSocketIPAdress"
+            android:layout_marginTop="15dp"
+            android:text="Port: "
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editJavaSocketPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView4"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@android:color/holo_orange_light" />
+
+        <Button
+            android:id="@+id/button_connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editJavaSocketPort"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/holo_blue_light"
+            android:text="CONNECT &amp; SAVE" />
+
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button_connect"
+            android:layout_alignBottom="@+id/button_connect"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/holo_blue_light"
+            android:text="SAVE" />
+    </RelativeLayout>
+
+</LinearLayout>
